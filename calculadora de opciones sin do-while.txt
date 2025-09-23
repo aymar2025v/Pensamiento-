@@ -1,0 +1,54 @@
+// calculadora de opciones sin bucles do-while
+#include <iostream>
+#include<cmath>
+
+int main()
+{
+    
+    std::cout << "====menu====" << std::endl;
+    std::cout << "(1) suma" << std::endl;
+    std::cout << "(2) resta" << std::endl;
+    std::cout << "(3) multiplicacion" << std::endl;
+    std::cout << "(4) divicion" << std::endl;
+    std::cout << "(5) potencia" << std::endl;
+    
+    int opcion, op, a, b;
+    std::cout << "ingrese una opcion: "; std::cin >> opcion;
+
+    switch (opcion) {
+    case 1: 
+        std::cout << "a: "; std::cin >> a;
+        std::cout << "b: "; std::cin >> b;
+        std::cout << "la suma es: " << a + b;
+        break;
+
+    case 2:
+        std::cout << "a: "; std::cin >> a;
+        std::cout << "b: "; std::cin >> b;
+        std::cout << "la resta es: " << a - b;
+        break;
+
+    case 3:
+        std::cout << "a: "; std::cin >> a;
+        std::cout << "b: "; std::cin >> b;
+        std::cout << "la multiplicacion es: " << a * b;
+        break;
+
+    case 4:
+        std::cout << "a: "; std::cin >> a;
+        std::cout << "b: "; std::cin >> b;
+        std::cout << "la suma es: " << a / b;
+        break;
+
+    case 5:
+        std::cout << "a: "; std::cin >> a;
+        std::cout << "b: "; std::cin >> b;
+        std::cout << "la potencia es: " << pow(a, b);
+        break;
+
+    default: std::cout << "pruebe otro numero.";
+        break;
+    }
+
+    return 0;
+}
