@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+
+	int dia;
+
+	std::cout << "====dias de la semana====" << std::endl;
+	std::cout << "(1) para lunes" << std::endl;
+	std::cout << "(2) para martes" << std::endl;
+	std::cout << "(3) para mircoles" << std::endl;
+	std::cout << "(4) para jueves" << std::endl;
+	std::cout << "(5) para viernes" << std::endl;
+	std::cout << "(6) para sabado" << std::endl;
+	std::cout << "(7) para domingo" << std::endl;
+
+	std::cout << "ingrese una opcion:"; std::cin >> dia;
+
+	switch (dia) {
+	case 1: std::cout << "lunes"; break;
+	case 2: std::cout << "lunes"; break;
+	case 3: std::cout << "lunes"; break;
+	case 4: std::cout << "lunes"; break;
+	case 5: std::cout << "lunes"; break;
+	case 6: std::cout << "lunes"; break;
+	case 7: std::cout << "lunes"; break;
+	default: std::cout << "ingrese otra opcion.";
+	}
+
+	return 0;
+}
