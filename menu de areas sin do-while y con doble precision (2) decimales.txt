@@ -1,0 +1,39 @@
+#include <iostream>
+#include<iomanip>
+
+int main()
+{
+    
+    std::cout << "====menu de areas====" << std::endl;
+    std::cout << "(1) cuadrado" << std::endl;
+    std::cout << "(2) rectangulo" << std::endl;
+    std::cout << "(3) triangulo" << std::endl;
+    
+    int opcion;
+    float base, haltura, lado;
+    std::cout << "ingrese una opcion: "; std::cin >> opcion;
+
+    switch (opcion) {
+    case 1: 
+        std::cout << "lado: "; std::cin >> lado;
+        std::cout << "el area es: " << std::fixed << std::setprecision(2) << lado * lado;
+        break;
+
+    case 2:
+        std::cout << "base: "; std::cin >> base;
+        std::cout << "haltura: "; std::cin >> haltura;
+        std::cout << "el area es: " << std::fixed << std::setprecision(2) << base * haltura;
+        break;
+
+    case 3:
+        std::cout << "base: "; std::cin >> base;
+        std::cout << "haltura: "; std::cin >> haltura;
+        std::cout << "el area es: " << std::fixed << std::setprecision(2) << base * haltura / 2;
+        break;
+
+    default: std::cout << "pruebe otro numero.";
+        break;
+    }
+
+    return 0;
+}
