@@ -1,0 +1,53 @@
+#include <iostream>
+
+int main()
+{
+    
+	std::cout << "-clave-    -sona-" << std::endl;
+	std::cout << "(12)   para lunes" << std::endl;
+	std::cout << "(15)   para martes" << std::endl;
+	std::cout << "(18)   para mircoles" << std::endl;
+	std::cout << "(19)   para jueves" << std::endl;
+	std::cout << "(23)   para viernes" << std::endl;
+	std::cout << "(25)   para sabado" << std::endl;
+	std::cout << "(29)   para domingo" << std::endl;
+
+	int clave;
+	float tiempo;
+	std::cout << "ingrese la clave: "; std::cin >> clave;
+
+	switch (clave) {
+	case 12: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 2;
+		break;
+
+	case 15: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 2.2;
+		break;
+
+	case 18: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 4.5;
+		break;
+
+	case 19: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 3.5;
+		break;
+
+	case 23: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 6;
+		break;
+
+	case 25: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 6;
+		break;
+
+	case 29: std::cout << "ingrese el tiepo(min):"; std::cin >> tiempo;
+		std::cout << "el costo total es: " << tiempo * 5;
+		break;
+
+	default: std::cout << "intente de nuevo."; break;
+
+	}
+
+    return 0;
+}
