@@ -1,0 +1,16 @@
+#include<iostream>
+
+int main()
+{
+
+	int edad;
+	std::cin>>edad;
+
+	if(edad<18&&edad>=0) {
+		if(edad<13) std::cout<<"NIÑO";
+		else std::cout<<"ADOLESCENTE";
+	}
+	else std::cout<<"ADULTO"<<'\n';
+
+	return 0;
+}
