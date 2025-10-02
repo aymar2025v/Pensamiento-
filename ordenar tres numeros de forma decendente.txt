@@ -1,0 +1,37 @@
+#include<iostream>
+
+int main()
+{
+
+	int x,y,z;
+	std::cout<<"x: ";
+	std::cin>>x;
+	std::cout<<"y: ";
+	std::cin>>y;
+	std::cout<<"z: ";
+	std::cin>>z;
+
+	if(x<y) {
+		if(x<z) {
+			if(z<y) {
+				std::cout<<y<<" "<<z<<" "<<x;
+			}
+			else {
+				std::cout<<z<<" "<<y<<" "<<x;
+			}
+		} else {
+			std::cout<<y<<" "<<x<<" "<<z;
+		}
+	} else {
+		if(y<z) {
+			if(z<x) {
+				std::cout<<x<<" "<<z<<" "<<y;
+			} else {
+				std::cout<<z<<" "<<x<<" "<<y;
+			}
+		} else {
+			std::cout<<x<<" "<<y<<" "<<z;
+		}
+	}
+	return 0;
+}
