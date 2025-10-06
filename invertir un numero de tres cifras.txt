@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    
+    int numero, dig1, dig2, dig3,numiv;
+    cout << "ingrese un numero de tres cifras: ";
+    cin >> numero;
+
+    if (numero < 0) {
+        numero = -1 * numero;
+    }
+
+    if (numero < 1000 && numero>99) {
+        dig1 = numero / 100;
+        dig2 = (numero / 10) % 10;
+        dig3 = numero % 10;
+        numiv = dig3 * 100 + dig2 * 10 + dig1;
+        cout << "numero invertido: " << numiv;
+    }
+    else {
+        cout << "tiene que ser un numero de tres cifras";
+    }
+
+    return 0;
+}
