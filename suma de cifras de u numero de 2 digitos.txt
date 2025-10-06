@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    
+    int numero, dig1, dig2, suma = 0;
+    cout << "ingrese un numero:";
+    cin >> numero;
+
+    if (numero < 0)
+        numero = -1 * numero;
+
+    dig1 = numero / 10;
+    dig2 = numero % 10;
+    suma = dig1 + dig2;
+
+    if (numero <= 99 && numero >= 10)
+        cout << "la suma es: " << suma;
+    else
+        cout << "el numero tiene qe ser de dos cifras";
+
+    return 0;
+}
