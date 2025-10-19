@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int ultimoDig,numero,suma=0;
+	cin>>numero;
+
+	while(numero>0) {
+		ultimoDig=numero%10;
+		numero=numero/10;
+		suma+=ultimoDig;
+	}
+	cout<<suma;
+
+	return 0;
+}
