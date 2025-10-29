@@ -1,0 +1,19 @@
+// Realizar un programa que permita sumar los primeros números naturales (utilizar
+// vectores)
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int n,suma=0;
+	cin>>n;
+	int arr[n];
+
+	for(int i=0; i<n; i++) {
+		arr[i]=i+1;
+		suma+=arr[i];
+	}
+	cout<<"la suma es: "<<suma;
+
+	return 0;
+}
