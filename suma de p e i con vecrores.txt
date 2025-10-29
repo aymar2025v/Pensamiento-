@@ -1,0 +1,23 @@
+// Realizar un programa que permita sumar los nC:meros pares e impares (utilizar
+// vectores)
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int n,sumai=0,sumap=0;
+	cin>>n;
+	int arr[n];
+
+	for(int i=0; i<n; i++) {
+		arr[i]=i+1;
+		if(arr[i]%2==0)
+			sumap+=arr[i];
+		else
+			sumai+=arr[i];
+	}
+	cout<<"la suma de pares: "<<sumap<<endl;
+	cout<<"la suma de impares: "<<sumai;
+
+	return 0;
+}
