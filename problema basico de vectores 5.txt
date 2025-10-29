@@ -1,0 +1,21 @@
+/*
+Modificar el ejercicio anterior para insertar los elementos numéricos mediante un
+bucle y visualizar por pantalla.
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int arr[5];
+	
+	for(int i=0; i<5; i++) {
+		cin>>arr[i];
+	}
+
+	for(int i=0; i<5; i++) {
+		cout<<"elemento de indice "<<i<<" = "<<arr[i]<<endl;
+	}
+
+	return 0;
+}
