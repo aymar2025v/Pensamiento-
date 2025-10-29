@@ -1,0 +1,42 @@
+/*
+Buscar un elemento dentro de un arreglo ingresados por teclado. Indicar la
+posición donde se encuentra.
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, elemento, posicion = -1;
+
+    cout << "Ingrese el tamaño del arreglo: ";
+    cin >> n;
+
+    int arreglo[n]; // declaramos el arreglo
+
+    // Ingreso de datos
+    cout << "Ingrese los " << n << " elementos del arreglo:\n";
+    for (int i = 0; i < n; i++) {
+        cout << "Elemento " << i + 1 << ": ";
+        cin >> arreglo[i];
+    }
+
+    // Elemento a buscar
+    cout << "\nIngrese el numero que desea buscar: ";
+    cin >> elemento;
+
+    // Búsqueda lineal
+    for (int i = 0; i < n; i++) {
+        if (arreglo[i] == elemento) {
+            posicion = i; // guardamos la posición donde se encontró
+            break;         // salimos del bucle
+        }
+    }
+
+    // Resultado
+    if (posicion != -1)
+        cout << "\nEl numero " << elemento << " se encuentra en la posicion " << posicion + 1 << "." << endl;
+    else
+        cout << "\nEl numero " << elemento << " NO se encuentra en el arreglo." << endl;
+
+    return 0;
+}
