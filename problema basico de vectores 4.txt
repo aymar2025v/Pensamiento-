@@ -1,0 +1,22 @@
+/*
+Crear un array o arreglo unidimensional con un tamaño de 5, asignar elementos
+numéricos manualmente y visualizar por pantalla
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int arr[5];
+	cin>>arr[0];
+	cin>>arr[1];
+	cin>>arr[2];
+	cin>>arr[3];
+	cin>>arr[4];
+
+	for(int i=0; i<5; i++) {
+		cout<<"elemento de indice "<<i<<" = "<<arr[i]<<endl;
+	}
+
+	return 0;
+}
